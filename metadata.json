@@ -1,0 +1,6 @@
+{
+  "name": "Follygee Rides and Autos",
+  "description": "Premium e-hailing, Sienna car hiring, airport protocol logistics transfers, and foreign used car sales in Lagos, Nigeria.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
