@@ -412,10 +412,14 @@ export default function ContactForm({ businessName, services, onSubmissionSucces
                   onChange={(e) => setCarModelOfInterest(e.target.value)}
                   className="w-full text-xs px-2.5 py-2 bg-white border border-slate-200 rounded-lg focus:outline-none text-slate-900 cursor-pointer appearance-none"
                 >
-                  <option value="Toyota Corolla Tokunbo (2016 - 2020)">Toyota Corolla Foreign Used Tokunbo (₦10m - ₦14m)</option>
-                  <option value="Toyota Camry Tokunbo (2018 - 2022)">Toyota Camry Foreign Used Tokunbo (₦12m - ₦18m)</option>
-                  <option value="Toyota Sienna Space Wagon (2015 - 2019)">Toyota Sienna Space Wagon (₦9.5m - ₦15m)</option>
-                  <option value="Lexus RX350 Premium SUV (2015 - 2020)">Lexus RX350 Premium SUV (₦16m - ₦24m)</option>
+                  <option value="Toyota Corolla Tokunbo (Foreign Used)">Toyota Corolla Tokunbo (Foreign Used)</option>
+                  <option value="Toyota Corolla (Nigerian Used)">Toyota Corolla (Nigerian Used)</option>
+                  <option value="Toyota Camry Tokunbo (Foreign Used)">Toyota Camry Tokunbo (Foreign Used)</option>
+                  <option value="Toyota Camry (Nigerian Used)">Toyota Camry (Nigerian Used)</option>
+                  <option value="Toyota Sienna Space Wagon (Foreign Used Tokunbo)">Toyota Sienna Space Wagon (Foreign Used Tokunbo)</option>
+                  <option value="Toyota Sienna Space Wagon (Nigerian Used)">Toyota Sienna Space Wagon (Nigerian Used)</option>
+                  <option value="Lexus RX350 Premium SUV (Foreign Used Tokunbo)">Lexus RX350 Premium SUV (Foreign Used Tokunbo)</option>
+                  <option value="Lexus RX350 Premium SUV (Nigerian Used)">Lexus RX350 Premium SUV (Nigerian Used)</option>
                   <option value="Brand New / Custom Car Imports">Other Custom Car Import Request (Inquire specifications)</option>
                 </select>
               </div>

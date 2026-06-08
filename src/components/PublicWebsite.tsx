@@ -25,7 +25,7 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
       id: "car-1",
       name: "Toyota Corolla (LE Edition)",
       year: "2018",
-      price: "₦12,500,000",
+      type: "Foreign Used (Tokunbo)",
       status: "Available at Lot",
       specs: ["Super Clean Tokunbo", "All-Wheel Drive Duty Paid", "Alloy Wheels", "Automatic Transmission"],
       image: "🚗"
@@ -34,7 +34,7 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
       id: "car-2",
       name: "Toyota Camry (XLE Luxury)",
       year: "2019",
-      price: "₦15,000,000",
+      type: "Foreign Used (Tokunbo)",
       status: "Recently Arrived",
       specs: ["Leather Interior", "Reverse Camera & Sensor", "Sunroof Choice", "Customs Clean Duty Paper"],
       image: "🚘"
@@ -43,16 +43,16 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
       id: "car-3",
       name: "Toyota Sienna Space Wagon (XLE)",
       year: "2017",
-      price: "₦11,800,000",
+      type: "Nigerian Used",
       status: "Hot Seller",
-      specs: ["Spacious 3-Row Seating", "Power Sliding Doors", "Dual Air Conditioning", "Family Premium Spec"],
+      specs: ["Pristine Nigerian Used", "Well-maintained body", "Chilled dual AC system", "Spacious 3-Row Seating"],
       image: "🚐"
     },
     {
       id: "car-4",
       name: "Lexus RX350 (AWD Premium Luxury)",
       year: "2016",
-      price: "₦19,500,000",
+      type: "Foreign Used (Tokunbo)",
       status: "Available at Showroom",
       specs: ["Push Start Button", "Reverse Guidance Camera", "Premium Sound System", "Full Duty Document"],
       image: "🚙"
@@ -325,10 +325,10 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
           
           <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-12 border-b border-slate-100 pb-6 gap-4">
             <div className="text-left max-w-xl">
-              <span className="text-[10px] font-bold text-amber-600 tracking-widest uppercase bg-amber-50 px-2.5 py-1 rounded border border-amber-100">TOKUNBO CAR SALES</span>
-              <h2 className="text-2xl font-black text-slate-900 tracking-tight mt-3">Prinstine Auto Showroom lot</h2>
+              <span className="text-[10px] font-bold text-amber-600 tracking-widest uppercase bg-amber-50 px-2.5 py-1 rounded border border-amber-100">TOKUNBO & NIGERIAN USED AUTOMOBILES</span>
+              <h2 className="text-2xl font-black text-slate-900 tracking-tight mt-3">Pristine Auto Showroom Lot</h2>
               <p className="text-slate-500 text-xs mt-1">
-                Looking to purchase a vehicle instead? We import and sell extremely clean, foreign-used (Tokunbo) Toyota and Lexus cars directly at our Akute showroom. Custom duties fully paid with high accountability.
+                Looking to purchase a vehicle instead? We sell extremely clean, foreign-used (Tokunbo) and Nigerian-used Toyota and Lexus cars directly at our showroom. Custom duties fully paid with high accountability.
               </p>
             </div>
             
@@ -348,9 +348,12 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
                     {car.image}
                   </div>
                   <div className="p-4 space-y-2">
-                    <div className="flex items-center justify-between text-[10px]">
-                      <span className="font-bold text-slate-400">TOKUNBO Model {car.year}</span>
-                      <span className="bg-blue-100 text-blue-900 font-extrabold px-1.5 py-0.5 rounded uppercase leading-none">{car.status}</span>
+                    <div className="flex flex-col gap-1">
+                      <div className="flex items-center justify-between text-[10px]">
+                        <span className="font-bold text-slate-400">{car.type}</span>
+                        <span className="bg-blue-100 text-blue-900 font-extrabold px-1.5 py-0.5 rounded uppercase leading-none text-[8px]">{car.status}</span>
+                      </div>
+                      <span className="text-[10px] font-bold text-slate-500">Year {car.year}</span>
                     </div>
 
                     <h4 className="text-sm font-bold text-slate-900 leading-tight block">{car.name}</h4>
@@ -367,12 +370,11 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
                 </div>
 
                 <div className="p-4 border-t border-slate-200 bg-slate-100/60 flex items-center justify-between gap-1">
-                  <span className="text-sm font-black text-blue-900">{car.price}</span>
                   <button
-                    onClick={() => handleInspectCar(car.name)}
-                    className="text-[10px] font-bold text-white bg-blue-900 hover:bg-slate-900 px-3 py-1.5 rounded transition-all cursor-pointer"
+                    onClick={() => handleInspectCar(`${car.name} (${car.type})`)}
+                    className="w-full text-center text-[10px] font-bold text-white bg-blue-900 hover:bg-slate-900 py-2 rounded transition-all cursor-pointer"
                   >
-                    Inspect/Buy
+                    Inquire / Request Pricing
                   </button>
                 </div>
               </div>
