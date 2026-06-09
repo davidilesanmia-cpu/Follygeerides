@@ -3,6 +3,12 @@ import * as Icons from "lucide-react";
 import { BusinessConfig } from "../types";
 import ContactForm from "./ContactForm";
 
+// High-quality local automotive assets
+import toyotaCorolla from "../assets/images/toyota_corolla_2010_1781014375597.png";
+import toyotaCamry from "../assets/images/toyota_camry_2008_1781014390371.png";
+import toyotaSienna from "../assets/images/toyota_sienna_2005_1781014405988.png";
+import lexusRx350 from "../assets/images/lexus_rx350_2010_1781014420884.png";
+
 interface PublicWebsiteProps {
   config: BusinessConfig;
   onSubmissionSuccess?: () => void;
@@ -28,7 +34,7 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
       type: "Foreign Used (Tokunbo)",
       status: "Available at Lot",
       specs: ["Super Clean Tokunbo", "Custom Duty Fully Paid", "Alloy Wheels", "Automatic Transmission"],
-      image: "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/1/10/2009-2010_Toyota_Corolla_--_04-20-2012.jpg"
+      image: toyotaCorolla
     },
     {
       id: "car-2",
@@ -37,7 +43,7 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
       type: "Foreign Used (Tokunbo)",
       status: "Recently Arrived",
       specs: ["Pristine Interior", "Chilling AC System", "Low Mileage", "Customs Clean Duty Paper"],
-      image: "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/a/ae/2007-2009_Toyota_Camry_LE_--_06-25-2011.jpg"
+      image: toyotaCamry
     },
     {
       id: "car-3",
@@ -46,7 +52,7 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
       type: "Nigerian Used",
       status: "Hot Seller",
       specs: ["Pristine Nigerian Used", "Well-maintained body", "Chilled dual AC system", "Spacious 3-Row Seating"],
-      image: "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/4/4c/2004-2005_Toyota_Sienna_XLE.jpg"
+      image: toyotaSienna
     },
     {
       id: "car-4",
@@ -55,7 +61,7 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
       type: "Foreign Used (Tokunbo)",
       status: "Available at Showroom",
       specs: ["Push Start Button", "Reverse Guidance Camera", "Premium Sound System", "Full Duty Document"],
-      image: "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/a/ad/2010_Lexus_RX_350_AWD_--_12-26-2009.jpg"
+      image: lexusRx350
     }
   ];
 
@@ -104,7 +110,7 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
   const directWhatsAppLink = "https://api.whatsapp.com/send?phone=2348034623693&text=Hello%20Follygee%20Rides!%20I%20am%20visiting%20your%20website%20and%20would%20like%20to%20learn%20more%20about%20your%20rides%20and%20autos%20services.";
 
   return (
-    <div className="bg-slate-50 min-h-screen font-sans text-slate-800 relative pb-16 sm:pb-0">
+    <div className="bg-[#F5ECD7] min-h-screen font-sans text-slate-900 relative pb-16 sm:pb-0 font-medium tracking-wide">
       
       {/* FLOATING ACTION OVERLAYS FOR COG SYSTEM */}
       
@@ -151,7 +157,7 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
       </div>
 
       {/* LUXURY GOLD/BLUE BRANDING RAIL */}
-      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 px-4 sm:px-6 py-3.5 shadow-sm">
+      <header className="sticky top-0 z-40 bg-[#FCF8EE]/95 backdrop-blur-md border-b border-[#E7DECB] px-4 sm:px-6 py-3.5 shadow-md">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           
           <div className="flex items-center gap-2.5">
@@ -163,7 +169,7 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
                 <span className="font-extrabold text-blue-900 tracking-tight text-base leading-none">Follygee Rides</span>
                 <span className="text-[9px] px-1.5 py-0.5 font-extrabold uppercase bg-amber-400 text-slate-950 rounded tracking-widest scale-90">Autos</span>
               </div>
-              <span className="text-[10px] text-slate-400 font-bold tracking-wide uppercase mt-0.5 block">Akute Lagos Dispatch Lot</span>
+              <span className="text-[10px] text-slate-400 font-bold tracking-wide uppercase mt-0.5 block">Lagos &amp; Southwest Nigeria Transit Network</span>
             </div>
           </div>
           
@@ -200,7 +206,7 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
           </div>
 
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1] max-w-4xl mx-auto font-sans">
-            Reliable, Safe &amp; Affordable Transportation Across <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-yellow-400 underline decoration-amber-400">Lagos and Beyond</span>
+            Reliable, Safe &amp; Affordable Transportation Across <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-yellow-400 underline decoration-amber-400">Lagos, Ogun, Oyo, Ondo, Ekiti &amp; Southwest</span>
           </h1>
 
           <p className="text-slate-300 text-sm md:text-base max-w-2xl mx-auto leading-relaxed font-medium">
@@ -229,9 +235,9 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
 
           {/* Prompt SEO Keywords block */}
           <div className="pt-6 flex flex-wrap justify-center items-center gap-4 text-[10px] text-slate-400 font-bold uppercase tracking-wider">
-            <span className="bg-slate-900 py-1.5 px-3 rounded-lg border border-slate-800"># Sienna Hire Lagos</span>
-            <span className="bg-slate-900 py-1.5 px-3 rounded-lg border border-slate-800"># Airport Pickup MMIA</span>
-            <span className="bg-slate-900 py-1.5 px-3 rounded-lg border border-slate-800"># Private Driver Lagos</span>
+            <span className="bg-slate-900 py-1.5 px-3 rounded-lg border border-slate-800"># Southwest Sienna Hire</span>
+            <span className="bg-slate-900 py-1.5 px-3 rounded-lg border border-slate-800"># Lagos Oyo Ekiti Ondo Cars</span>
+            <span className="bg-slate-900 py-1.5 px-3 rounded-lg border border-slate-800"># Ogun Oyo Fleet Intestate</span>
             <span className="bg-slate-900 py-1.5 px-3 rounded-lg border border-slate-800"># Tokunbo Car Sales</span>
           </div>
 
@@ -239,79 +245,79 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
       </section>
 
       {/* WHY CHOOSE COMPONENT */}
-      <section className="py-16 bg-white shrink-0">
+      <section className="py-16 bg-[#FCF8EE] shrink-0 border-b border-[#E7DECB]/85">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center max-w-xl mx-auto mb-12">
-            <span className="text-[10px] font-bold text-blue-900 tracking-widest uppercase bg-blue-50 px-3 py-1 rounded">FOLLYGEE CORES</span>
-            <h2 className="text-2xl font-black text-slate-900 tracking-tight mt-3">Why Lagos Commuters Count On Us</h2>
-            <p className="text-slate-500 text-xs mt-2">
-              We never compromise. Every trip, inspection, and delivery is managed with strict protocols.
+          <div className="text-center max-w-xl mx-auto mb-14">
+            <span className="text-[10px] font-extrabold text-amber-950 tracking-widest uppercase bg-amber-150 px-3.5 py-1.5 rounded-lg border border-amber-300/40">FOLLYGEE CORES</span>
+            <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight mt-4">Why Southwest Commuters Count On Us</h2>
+            <p className="text-slate-700 text-xs mt-2.5 font-bold leading-relaxed">
+              We never compromise. Every trip, inspection, and delivery is managed with strict professional protocols.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-left">
-            <div className="p-5 bg-slate-50 rounded-xl border border-slate-100">
-              <div className="w-10 h-10 bg-amber-100 text-amber-800 rounded-lg flex items-center justify-center font-bold mb-4">
+            <div className="p-6 bg-white rounded-2xl border border-[#E7DECB] shadow-sm hover:shadow-md transition-all duration-150">
+              <div className="w-10 h-10 bg-amber-200/50 text-amber-950 rounded-xl flex items-center justify-center font-bold mb-4">
                 <Icons.Verified className="w-5 h-5 text-blue-900" />
               </div>
-              <h3 className="text-sm font-bold text-slate-900 mb-1">Vehicle &amp; Chauffeur Safety</h3>
-              <p className="text-[11px] text-slate-500 leading-relaxed">Our cars undergo strictly checked mechanical maintenance. Our drivers are trained defensively for highway and inner city routes.</p>
+              <h3 className="text-base font-extrabold text-slate-900 mb-2">Vehicle &amp; Chauffeur Safety</h3>
+              <p className="text-xs text-slate-600 leading-relaxed font-semibold">Our cars undergo strictly checked mechanical maintenance. Our drivers are trained defensively for highway and inner city routes.</p>
             </div>
 
-            <div className="p-5 bg-slate-50 rounded-xl border border-slate-100">
-              <div className="w-10 h-10 bg-amber-100 text-amber-800 rounded-lg flex items-center justify-center font-bold mb-4">
+            <div className="p-6 bg-white rounded-2xl border border-[#E7DECB] shadow-sm hover:shadow-md transition-all duration-150">
+              <div className="w-10 h-10 bg-amber-200/50 text-amber-950 rounded-xl flex items-center justify-center font-bold mb-4">
                 <Icons.Activity className="w-5 h-5 text-blue-900" />
               </div>
-              <h3 className="text-sm font-bold text-slate-900 mb-1">Punctual Dispatch Team</h3>
-              <p className="text-[11px] text-slate-500 leading-relaxed">We keep strict adherence to timelines. We arrive 15 minutes before departure to guarantee luggage load stability.</p>
+              <h3 className="text-base font-extrabold text-slate-900 mb-2">Punctual Dispatch Team</h3>
+              <p className="text-xs text-slate-600 leading-relaxed font-semibold">We keep strict adherence to timelines. We arrive 15 minutes before departure to guarantee luggage load stability.</p>
             </div>
 
-            <div className="p-5 bg-slate-50 rounded-xl border border-slate-100">
-              <div className="w-10 h-10 bg-amber-100 text-amber-800 rounded-lg flex items-center justify-center font-bold mb-4">
+            <div className="p-6 bg-white rounded-2xl border border-[#E7DECB] shadow-sm hover:shadow-md transition-all duration-150">
+              <div className="w-10 h-10 bg-amber-200/50 text-amber-950 rounded-xl flex items-center justify-center font-bold mb-4">
                 <Icons.Clock className="w-5 h-5 text-blue-900" />
               </div>
-              <h3 className="text-sm font-bold text-slate-900 mb-1">Available 24/7 Hours</h3>
-              <p className="text-[11px] text-slate-500 leading-relaxed">Whether it's an emergency late-night airport drop-off or an early morning interstate trip, we are online for your support.</p>
+              <h3 className="text-base font-extrabold text-slate-900 mb-2">Available 24/7 Hours</h3>
+              <p className="text-xs text-slate-600 leading-relaxed font-semibold">Whether it's an emergency late-night airport drop-off or an early morning interstate trip, we are online for your support.</p>
             </div>
 
-            <div className="p-5 bg-slate-50 rounded-xl border border-slate-100">
-              <div className="w-10 h-10 bg-amber-100 text-amber-800 rounded-lg flex items-center justify-center font-bold mb-4">
+            <div className="p-6 bg-white rounded-2xl border border-[#E7DECB] shadow-sm hover:shadow-md transition-all duration-150">
+              <div className="w-10 h-10 bg-amber-200/50 text-amber-950 rounded-xl flex items-center justify-center font-bold mb-4">
                 <Icons.Locate className="w-5 h-5 text-blue-900" />
               </div>
-              <h3 className="text-sm font-bold text-slate-900 mb-1">Lagos Route Experts</h3>
-              <p className="text-[11px] text-slate-500 leading-relaxed">From anywhere in Lagos or Ogun to anywhere in Nigeria, particularly Southwest Nigeria, our driver fleet uses the best traffic routes.</p>
+              <h3 className="text-base font-extrabold text-slate-900 mb-2">Southwest Route Experts</h3>
+              <p className="text-xs text-slate-600 leading-relaxed font-semibold">From anywhere in Lagos, Ogun, Oyo, Ondo, Ekiti, or Osun to all South Western Nigeria regions, our driver fleet uses the best traffic routes.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CORE SERVICES */}
-      <section id="services" className="py-16 bg-slate-100/60 border-y border-slate-200">
+      <section id="services" className="py-16 bg-[#F5ECD7] border-y border-[#E7DECB]">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center max-w-xl mx-auto mb-12">
-            <span className="text-[10px] font-bold text-blue-900 tracking-widest uppercase bg-blue-100/50 px-2.5 py-1 rounded">ELITE TRAVEL MATRIX</span>
-            <h2 className="text-2xl font-black text-slate-900 tracking-tight mt-3">Professional Transportation Solutions</h2>
-            <p className="text-slate-500 text-xs mt-1">
-              Select a transport option of your choice below, then fill out our secure booking system.
+            <span className="text-[10px] font-extrabold text-amber-950 tracking-widest uppercase bg-amber-200/65 px-3 py-1.5 rounded-lg border border-amber-300">ELITE TRAVEL MATRIX</span>
+            <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight mt-4">Professional Transportation Solutions</h2>
+            <p className="text-slate-800 text-xs mt-2 font-bold max-w-sm mx-auto">
+              Select a travel option of your choice below, then fill out our secure booking system.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {config.services.map((srv) => (
-              <div key={srv.id} className="bg-white rounded-xl border border-slate-200/90 p-6 flex flex-col justify-between hover:shadow-lg transition-all duration-150 relative">
-                <div className="absolute top-4 right-4 text-[9px] font-extrabold uppercase bg-amber-400 text-slate-900 py-1 px-2 rounded-md">
-                  Active in Lagos
+              <div key={srv.id} className="bg-[#FCF8EE] rounded-2xl border border-[#E7DECB] p-6 flex flex-col justify-between hover:shadow-xl hover:border-blue-900 transition-all duration-150 relative">
+                <div className="absolute top-4 right-4 text-[9px] font-extrabold uppercase bg-amber-400 text-slate-950 py-1 px-2.5 rounded-md tracking-wider">
+                  Active in Southwest
                 </div>
                 <div>
-                  <div className="w-9 h-9 rounded-lg bg-blue-100/60 text-blue-900 flex items-center justify-center mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-blue-900/10 text-blue-900 flex items-center justify-center mb-4">
                     {renderIcon(srv.icon, "text-blue-900")}
                   </div>
-                  <h3 className="text-base font-bold text-slate-900 mb-2 leading-none">{srv.title}</h3>
-                  <p className="text-xs text-slate-500 leading-relaxed mb-6">{srv.description}</p>
+                  <h3 className="text-lg font-extrabold text-slate-900 mb-2 leading-tight">{srv.title}</h3>
+                  <p className="text-xs text-slate-650 leading-relaxed mb-6 font-semibold">{srv.description}</p>
                 </div>
-                <div className="border-t border-slate-100 pt-3.5 flex items-center justify-between">
-                  <span className="text-[10px] text-slate-400 uppercase font-bold">Standard rate</span>
-                  <span className="text-xs font-bold text-blue-900 bg-blue-50 px-2.5 py-1 rounded border border-blue-100">{srv.price}</span>
+                <div className="border-t border-[#E7DECB] pt-3.5 flex items-center justify-between">
+                  <span className="text-[10px] text-slate-500 uppercase font-bold tracking-widest">Standard rate</span>
+                  <span className="text-xs font-black text-white bg-blue-900 px-3 py-1.5 rounded-lg border border-blue-950">{srv.price}</span>
                 </div>
               </div>
             ))}
@@ -320,21 +326,21 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
       </section>
 
       {/* FOLLYGEE AUTOS / CAR SALES CATALOG SHOWROOM */}
-      <section id="autos" className="py-16 bg-white">
+      <section id="autos" className="py-16 bg-[#FCF8EE] border-b border-[#E7DECB]/85">
         <div className="max-w-6xl mx-auto px-6">
           
-          <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-12 border-b border-slate-100 pb-6 gap-4">
+          <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-12 border-b border-[#EAE2D0] pb-6 gap-4">
             <div className="text-left max-w-xl">
-              <span className="text-[10px] font-bold text-amber-600 tracking-widest uppercase bg-amber-50 px-2.5 py-1 rounded border border-amber-100">TOKUNBO & NIGERIAN USED AUTOMOBILES</span>
-              <h2 className="text-2xl font-black text-slate-900 tracking-tight mt-3">Pristine Auto Showroom Lot</h2>
-              <p className="text-slate-500 text-xs mt-1">
+              <span className="text-[10px] font-extrabold text-amber-950 tracking-widest uppercase bg-amber-250 px-3 py-1.5 rounded-lg border border-amber-300">TOKUNBO & NIGERIAN USED AUTOMOBILES</span>
+              <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight mt-4">Pristine Auto Showroom Lot</h2>
+              <p className="text-slate-700 text-xs mt-2 font-bold leading-relaxed">
                 Looking to purchase a vehicle instead? We sell extremely clean, foreign-used (Tokunbo) and Nigerian-used Toyota and Lexus cars directly at our showroom. Custom duties fully paid with high accountability.
               </p>
             </div>
             
             <a 
               href="#booking-system" 
-              className="text-xs font-bold text-blue-900 bg-blue-50 hover:bg-blue-100 px-4 py-2.5 rounded-lg border border-blue-100 flex items-center gap-1 shrink-0"
+              className="text-xs font-black text-blue-900 bg-amber-200/40 hover:bg-amber-200/60 px-5 py-3 rounded-xl border border-amber-300/60 flex items-center gap-1 shrink-0 transition-colors"
             >
               Request Custom Car Import <Icons.ChevronRight className="w-4 h-4" />
             </a>
@@ -342,30 +348,30 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {TOKUNBO_CARS.map((car) => (
-              <div key={car.id} className="bg-slate-50 rounded-xl border border-slate-200 text-left overflow-hidden flex flex-col justify-between group hover:border-blue-900 hover:shadow-xl duration-150">
+              <div key={car.id} className="bg-white rounded-2xl border border-[#E7DECB] text-left overflow-hidden flex flex-col justify-between group hover:border-blue-900 hover:shadow-2xl duration-150 transition-all">
                 <div>
-                  <div className="bg-slate-200 h-44 overflow-hidden flex items-center justify-center relative">
+                  <div className="bg-[#FAF5E8] h-44 overflow-hidden flex items-center justify-center relative border-b border-[#E7DECB]/40">
                     <img 
                       src={car.image} 
                       alt={car.name} 
                       referrerPolicy="no-referrer"
-                      className="w-full h-full object-cover group-hover:scale-105 duration-300 transition-transform" 
+                      className="w-full h-full object-cover group-hover:scale-105 duration-350 transition-transform" 
                     />
                   </div>
-                  <div className="p-4 space-y-2">
+                  <div className="p-5 space-y-3">
                     <div className="flex flex-col gap-1">
                       <div className="flex items-center justify-between text-[10px]">
-                        <span className="font-bold text-slate-400">{car.type}</span>
-                        <span className="bg-blue-100 text-blue-900 font-extrabold px-1.5 py-0.5 rounded uppercase leading-none text-[8px]">{car.status}</span>
+                        <span className="font-extrabold text-slate-400 capitalize">{car.type}</span>
+                        <span className="bg-blue-900 text-white font-black px-2 py-0.5 rounded uppercase leading-none text-[8px] tracking-wider">{car.status}</span>
                       </div>
-                      <span className="text-[10px] font-bold text-slate-500">Year {car.year}</span>
+                      <span className="text-[11px] font-extrabold text-amber-800">Model Year {car.year}</span>
                     </div>
 
-                    <h4 className="text-sm font-bold text-slate-900 leading-tight block">{car.name}</h4>
+                    <h4 className="text-sm font-black text-slate-950 leading-tight block">{car.name}</h4>
 
-                    <div className="space-y-1 pt-2">
+                    <div className="space-y-1.5 pt-2">
                       {car.specs.map((spec, sIdx) => (
-                        <div key={sIdx} className="flex items-center gap-1.5 text-[10px] text-slate-500">
+                        <div key={sIdx} className="flex items-center gap-1.5 text-[10px] text-slate-600 font-bold">
                           <Icons.BadgeCheck className="w-3.5 h-3.5 text-blue-900 shrink-0" />
                           <span className="truncate">{spec}</span>
                         </div>
@@ -374,12 +380,12 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
                   </div>
                 </div>
 
-                <div className="p-4 border-t border-slate-200 bg-slate-100/60 flex items-center justify-between gap-1">
+                <div className="p-4 border-t border-[#E7DECB] bg-[#FCF8EE]/55 flex items-center justify-between gap-1">
                   <button
                     onClick={() => handleInspectCar(`${car.name} (${car.type})`)}
-                    className="w-full text-center text-[10px] font-bold text-white bg-blue-900 hover:bg-slate-900 py-2 rounded transition-all cursor-pointer"
+                    className="w-full text-center text-xs font-extrabold text-white bg-blue-900 hover:bg-slate-950 py-2.5 rounded-xl transition-all cursor-pointer shadow-sm tracking-wider"
                   >
-                    Inquire / Request Pricing
+                    Inquire / Get Quote
                   </button>
                 </div>
               </div>
@@ -442,9 +448,9 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
                 <div>
                   <h4 className="text-sm font-bold text-white flex items-center gap-1.5">
                     <Icons.Navigation2 className="w-4 h-4 text-amber-400 rotate-45" />
-                    Lagos Dispatch Zones &amp; HQ
+                    Southwest Dispatch Hubs &amp; HQ
                   </h4>
-                  <p className="text-[10px] text-slate-400 mt-0.5">Physical Hub: Akute, border of Lagos and Ogun State</p>
+                  <p className="text-[10px] text-slate-400 mt-0.5">Physical Hub: Lagos-Ogun Border (Dispatching across Southwest)</p>
                 </div>
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
               </div>
@@ -455,24 +461,24 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
                   <div className="absolute -left-1.5 top-0 w-3 h-3 rounded-full bg-amber-400 flex items-center justify-center">
                     <span className="w-1 h-1 bg-slate-950 rounded-full"></span>
                   </div>
-                  <strong className="text-xs text-white block">HUB 1: Akute Head Office Lot</strong>
-                  <span className="text-[10px] text-slate-400 block mt-0.5">Follygrace business base, auto inspections lot, physical car sales, driver registration.</span>
+                  <strong className="text-xs text-white block">HUB 1: Lagos-Ogun Border Office</strong>
+                  <span className="text-[10px] text-slate-400 block mt-0.5">Follygrace central base, physical vehicle lot, dispatch and routing hub for Southwest operations.</span>
                 </div>
 
                 <div className="relative pl-6 pb-2.5 border-l border-amber-400/50">
                   <div className="absolute -left-1.5 top-0 w-3 h-3 rounded-full bg-blue-500 flex items-center justify-center">
                     <span className="w-1 h-1 bg-white rounded-full"></span>
                   </div>
-                  <strong className="text-xs text-white block">MMIA Logistics Gateway</strong>
-                  <span className="text-[10px] text-slate-400 block mt-0.5">Airports transfers drop-off and pickup terminal protocol for international travelers.</span>
+                  <strong className="text-xs text-white block">Ibadan Express &amp; Oyo Corridor</strong>
+                  <span className="text-[10px] text-slate-400 block mt-0.5">Daily Sienna shuttle routes, student/academic group transits, and commercial distribution.</span>
                 </div>
 
                 <div className="relative pl-6">
                   <div className="absolute -left-1.5 top-0 w-3 h-3 rounded-full bg-blue-500 flex items-center justify-center">
                     <span className="w-1 h-1 bg-white rounded-full"></span>
                   </div>
-                  <strong className="text-xs text-white block">Corporate Hubs Matrix</strong>
-                  <span className="text-[10px] text-slate-400 block mt-0.5">Ikeja GRA, Gbagada, Victoria Island &amp; Lekki. High coverage e-hailing &amp; staff commutes.</span>
+                  <strong className="text-xs text-white block">Ondo, Ekiti &amp; Osun Networks</strong>
+                  <span className="text-[10px] text-slate-400 block mt-0.5">Elite express interstate travel, family retreat logistics, and event shuttle coordination.</span>
                 </div>
               </div>
 
@@ -486,13 +492,13 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
       </section>
 
       {/* CORE BOOKING SCREEN */}
-      <section className="py-16 bg-slate-100">
+      <section className="py-16 bg-[#F5ECD7] border-b border-[#E7DECB]">
         <div id="booking-system" className="max-w-4xl mx-auto px-6">
           <div className="text-center max-w-xl mx-auto mb-10">
-            <span className="text-[10px] font-bold text-blue-900 tracking-widest uppercase bg-blue-200/50 px-2.5 py-1 rounded">SECURE PORTAL BACKEND</span>
-            <h2 className="text-2xl font-black text-slate-900 tracking-tight mt-3">Book Your Ride or Inquire Auto</h2>
-            <p className="text-slate-500 text-xs mt-1">
-              Select inquiry category inside our secure SSL form, fill information, and dispatch over our systems.
+            <span className="text-[10px] font-extrabold text-amber-950 tracking-widest uppercase bg-amber-200/70 px-3.5 py-1.5 rounded-lg border border-amber-300">SECURE PORTAL BACKEND</span>
+            <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight mt-4">Book Your Ride or Inquire Auto</h2>
+            <p className="text-slate-800 text-xs mt-2 font-bold max-w-sm mx-auto leading-relaxed">
+              Select your inquiry category inside our secure SSL form, fill out your travel details, and submit to our team.
             </p>
           </div>
 
@@ -519,45 +525,45 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
       </section>
 
       {/* CUSTOMER TESTIMONIALS */}
-      <section id="testimonials" className="py-16 bg-white border-t border-slate-200">
+      <section id="testimonials" className="py-16 bg-[#FCF8EE] border-b border-[#E7DECB]/85">
         <div className="max-w-6xl mx-auto px-6">
           
           <div className="text-center max-w-xl mx-auto mb-12">
-            <span className="text-[10px] font-bold text-blue-900 tracking-widest uppercase bg-blue-50 px-2.5 py-1 rounded">RATED 4.9 STARS BY CLIENTS</span>
-            <h2 className="text-2xl font-black text-slate-900 tracking-tight mt-3">What Our Commuters &amp; Car Buyers Say</h2>
+            <span className="text-[10px] font-extrabold text-amber-950 tracking-widest uppercase bg-amber-150 px-3.5 py-1.5 rounded-lg border border-amber-300">RATED 4.9 STARS BY CLIENTS</span>
+            <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight mt-4">What Our Commuters &amp; Car Buyers Say</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-            <div className="p-6 bg-slate-50 rounded-xl border border-slate-100 space-y-4">
+            <div className="p-6 bg-white rounded-2xl border border-[#E7DECB] space-y-4 shadow-sm">
               <div className="flex text-amber-500 gap-1">
                 {[...Array(5)].map((_, i) => <Icons.Star key={i} className="w-3.5 h-3.5 fill-current" />)}
               </div>
-              <p className="text-xs text-slate-600 italic">"I constantly travel from London to Lagos for research. Follygee Rides always picks me up at MMIA. Their sienna vehicles are extremely clean and dual-AC works perfectly. Recommend to everyone!"</p>
+              <p className="text-xs text-slate-700 italic font-medium">"I constantly travel from London to Lagos for research. Follygee Rides always picks me up at MMIA. Their sienna vehicles are extremely clean and dual-AC works perfectly. Recommend to everyone!"</p>
               <div>
-                <strong className="text-xs text-slate-950 block">Dr. Kunle Alao</strong>
-                <span className="text-[10px] text-slate-400">MMIA Frequent Airport Commuter</span>
+                <strong className="text-xs text-slate-950 block font-bold">Dr. Kunle Alao</strong>
+                <span className="text-[10px] text-slate-500 font-bold">MMIA Frequent Airport Commuter</span>
               </div>
             </div>
 
-            <div className="p-6 bg-slate-50 rounded-xl border border-slate-100 space-y-4">
+            <div className="p-6 bg-white rounded-2xl border border-[#E7DECB] space-y-4 shadow-sm">
               <div className="flex text-amber-500 gap-1">
                 {[...Array(5)].map((_, i) => <Icons.Star key={i} className="w-3.5 h-3.5 fill-current" />)}
               </div>
-              <p className="text-xs text-slate-600 italic">"We rented a Sienna for my sister's wedding logistics in Lagos. Driver was very professional, prompt, and dressed nicely. Outstanding punctuality and overall safety!"</p>
+              <p className="text-xs text-slate-700 italic font-medium">"We rented a Sienna for my sister's wedding logistics in Lagos. Driver was very professional, prompt, and dressed nicely. Outstanding punctuality and overall safety!"</p>
               <div>
-                <strong className="text-xs text-slate-950 block">Mrs. Blessing Okon</strong>
-                <span className="text-[10px] text-slate-400">Wedding Logistics Host</span>
+                <strong className="text-xs text-slate-950 block font-bold">Mrs. Blessing Okon</strong>
+                <span className="text-[10px] text-slate-500 font-bold">Wedding Logistics Host</span>
               </div>
             </div>
 
-            <div className="p-6 bg-slate-50 rounded-xl border border-slate-100 space-y-4">
+            <div className="p-6 bg-white rounded-2xl border border-[#E7DECB] space-y-4 shadow-sm">
               <div className="flex text-amber-500 gap-1">
                 {[...Array(5)].map((_, i) => <Icons.Star key={i} className="w-3.5 h-3.5 fill-current" />)}
               </div>
-              <p className="text-xs text-slate-600 italic">"Bought a silver Toyota Corolla Tokunbo from Follygee Autos last month. Lot in Akute had pristine units. Duties fully paid, diagnostics clean, car drives like butter. Exceptional trust!"</p>
+              <p className="text-xs text-slate-705 italic font-medium">"Bought a silver Toyota Corolla Tokunbo from Follygee Autos last month. Lot in Akute had pristine units. Duties fully paid, diagnostics clean, car drives like butter. Exceptional trust!"</p>
               <div>
-                <strong className="text-xs text-slate-950 block">Engr. Tobi Shonukan</strong>
-                <span className="text-[10px] text-slate-400">Corolla Purchaser, Lagos</span>
+                <strong className="text-xs text-slate-950 block font-bold">Engr. Tobi Shonukan</strong>
+                <span className="text-[10px] text-slate-500 font-bold">Corolla Purchaser, Lagos</span>
               </div>
             </div>
           </div>
@@ -566,35 +572,35 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
       </section>
 
       {/* SUPPORT SUPPORT FAQ SECTION */}
-      <section id="faqs" className="py-16 bg-slate-100/70 border-t border-slate-200">
+      <section id="faqs" className="py-16 bg-[#F5ECD7] border-b border-[#E7DECB]">
         <div className="max-w-3xl mx-auto px-6 text-left">
           
           <div className="text-center max-w-xl mx-auto mb-10">
-            <span className="text-[10px] font-bold text-blue-900 tracking-widest uppercase bg-blue-100/50 px-2.5 py-1 rounded">COMMON QUESTIONS</span>
-            <h2 className="text-2xl font-black text-slate-900 tracking-tight mt-3">Frequently Asked Questions</h2>
+            <span className="text-[10px] font-extrabold text-amber-950 tracking-widest uppercase bg-amber-200/70 px-3.5 py-1.5 rounded-lg border border-amber-300">COMMON QUESTIONS</span>
+            <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight mt-4">Frequently Asked Questions</h2>
           </div>
 
           <div className="space-y-3.5">
             {FAQS.map((faq, fIdx) => (
               <div 
                 key={fIdx} 
-                className="bg-white rounded-xl border border-slate-200 overflow-hidden"
+                className="bg-[#FCF8EE] rounded-2xl border border-[#E7DECB] overflow-hidden shadow-sm hover:shadow-md transition-all duration-150"
               >
                 <button
                   type="button"
                   onClick={() => setActiveFaq(activeFaq === fIdx ? null : fIdx)}
-                  className="w-full text-left py-4 px-5 text-sm font-bold text-slate-900 flex items-center justify-between hover:bg-slate-50 transition-colors cursor-pointer"
+                  className="w-full text-left py-4 px-5 text-sm font-extrabold text-slate-950 flex items-center justify-between hover:bg-white/50 transition-colors cursor-pointer"
                 >
                   <span>{faq.q}</span>
                   {activeFaq === fIdx ? (
-                    <Icons.MinusSquare className="w-4 h-4 text-amber-500 shrink-0" />
+                    <Icons.MinusSquare className="w-4 h-4 text-amber-600 shrink-0" />
                   ) : (
                     <Icons.PlusSquare className="w-4 h-4 text-blue-900 shrink-0" />
                   )}
                 </button>
                 
                 {activeFaq === fIdx && (
-                  <div className="py-3 px-5 text-xs text-slate-500 leading-relaxed border-t border-slate-100 bg-slate-50/50">
+                  <div className="py-4.5 px-5 text-xs text-slate-700 leading-relaxed border-t border-[#E7DECB]/80 bg-[#F5ECD7]/30 font-semibold">
                     {faq.a}
                   </div>
                 )}

@@ -4,13 +4,13 @@ export const INDUSTRY_PRESETS: Record<string, BusinessConfig> = {
   "Tech Advisory": {
     name: "Follygee Rides and Autos",
     industry: "E-hailing, Chauffeur Sienna Rentals & Auto Sales",
-    tagline: "Reliable, Safe & Affordable Transportation Across Lagos and Beyond",
-    description: "Book trusted rides, airport transfers, corporate transportation, and Sienna hire services with Follygee Rides. Available 24/7. We are committed to punctuality, professionalism, and vehicle safety.",
+    tagline: "Reliable, Safe & Affordable Transportation Across Lagos, Ogun, Oyo, Ondo, Ekiti & South Western Nigeria",
+    description: "Book trusted rides, airport transfers, corporate transportation, and Sienna hire services with Follygee Rides. Available 24/7 across Lagos, Ogun, Oyo, Ondo, Ekiti, Osun, and all of South Western Nigeria. We are committed to punctuality, professionalism, and vehicle safety.",
     primaryColor: "blue",
     theme: "light",
     email: "info@follygeerides.com",
     phone: "+234 803 462 3693",
-    address: "Akute Lagos, Nigeria",
+    address: "Lagos, Ogun, Oyo, Ondo, Ekiti, Osun & All South Western Nigeria",
     services: [
       {
         id: "folly-1",
