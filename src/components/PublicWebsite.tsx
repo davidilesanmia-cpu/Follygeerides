@@ -24,38 +24,38 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
     {
       id: "car-1",
       name: "Toyota Corolla (LE Edition)",
-      year: "2018",
+      year: "2010",
       type: "Foreign Used (Tokunbo)",
       status: "Available at Lot",
-      specs: ["Super Clean Tokunbo", "All-Wheel Drive Duty Paid", "Alloy Wheels", "Automatic Transmission"],
-      image: "🚗"
+      specs: ["Super Clean Tokunbo", "Custom Duty Fully Paid", "Alloy Wheels", "Automatic Transmission"],
+      image: "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/1/10/2009-2010_Toyota_Corolla_--_04-20-2012.jpg"
     },
     {
       id: "car-2",
-      name: "Toyota Camry (XLE Luxury)",
-      year: "2019",
+      name: "Toyota Camry (LE Luxury)",
+      year: "2008",
       type: "Foreign Used (Tokunbo)",
       status: "Recently Arrived",
-      specs: ["Leather Interior", "Reverse Camera & Sensor", "Sunroof Choice", "Customs Clean Duty Paper"],
-      image: "🚘"
+      specs: ["Pristine Interior", "Chilling AC System", "Low Mileage", "Customs Clean Duty Paper"],
+      image: "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/a/ae/2007-2009_Toyota_Camry_LE_--_06-25-2011.jpg"
     },
     {
       id: "car-3",
-      name: "Toyota Sienna Space Wagon (XLE)",
-      year: "2017",
+      name: "Toyota Sienna Space Wagon (LE)",
+      year: "2005",
       type: "Nigerian Used",
       status: "Hot Seller",
       specs: ["Pristine Nigerian Used", "Well-maintained body", "Chilled dual AC system", "Spacious 3-Row Seating"],
-      image: "🚐"
+      image: "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/4/4c/2004-2005_Toyota_Sienna_XLE.jpg"
     },
     {
       id: "car-4",
       name: "Lexus RX350 (AWD Premium Luxury)",
-      year: "2016",
+      year: "2010",
       type: "Foreign Used (Tokunbo)",
       status: "Available at Showroom",
       specs: ["Push Start Button", "Reverse Guidance Camera", "Premium Sound System", "Full Duty Document"],
-      image: "🚙"
+      image: "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/a/ad/2010_Lexus_RX_350_AWD_--_12-26-2009.jpg"
     }
   ];
 
@@ -344,8 +344,13 @@ export default function PublicWebsite({ config, onSubmissionSuccess, onAdminLogi
             {TOKUNBO_CARS.map((car) => (
               <div key={car.id} className="bg-slate-50 rounded-xl border border-slate-200 text-left overflow-hidden flex flex-col justify-between group hover:border-blue-900 hover:shadow-xl duration-150">
                 <div>
-                  <div className="bg-slate-200 h-32 flex items-center justify-center text-4xl group-hover:scale-105 duration-150">
-                    {car.image}
+                  <div className="bg-slate-200 h-44 overflow-hidden flex items-center justify-center relative">
+                    <img 
+                      src={car.image} 
+                      alt={car.name} 
+                      referrerPolicy="no-referrer"
+                      className="w-full h-full object-cover group-hover:scale-105 duration-300 transition-transform" 
+                    />
                   </div>
                   <div className="p-4 space-y-2">
                     <div className="flex flex-col gap-1">
