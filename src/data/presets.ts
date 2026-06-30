@@ -16,42 +16,42 @@ export const INDUSTRY_PRESETS: Record<string, BusinessConfig> = {
         id: "folly-1",
         title: "Airport Transfers",
         description: "Reliable, punctual airport pickups and drop-offs to check-in stress-free.",
-        price: "From ₦25,000",
+        price: "Flexible Price",
         icon: "Navigation"
       },
       {
         id: "folly-2",
         title: "Corporate Transportation",
         description: "Luxury logistics solutions for businesses, staff commuting schemes, and client transfers.",
-        price: "Custom quotation",
+        price: "Flexible Price",
         icon: "Briefcase"
       },
       {
         id: "folly-3",
         title: "Inter-State Travel",
         description: "Comfortable long-distance city transfers across Nigeria with professionally-trained highway drivers.",
-        price: "From ₦45,000/day",
+        price: "Flexible Price",
         icon: "Compass"
       },
       {
         id: "folly-4",
         title: "Sienna Hire",
         description: "Sienna rentals with expert drivers for family trips, retreats, events, and flexible group travels.",
-        price: "From ₦35,000/day",
+        price: "From ₦80,000/day",
         icon: "Car"
       },
       {
         id: "folly-5",
         title: "Event Transportation",
         description: "Coordinated transport fleets for weddings, executive conferences, premium parties, or church outings.",
-        price: "Flexible rates",
+        price: "Flexible Price",
         icon: "Sparkles"
       },
       {
         id: "folly-6",
         title: "Private Ride Booking",
         description: "Daily personalized transportation services and specialized private chauffeur bookings for individuals.",
-        price: "Hourly options",
+        price: "Flexible Price",
         icon: "ShieldAlert"
       }
     ]
